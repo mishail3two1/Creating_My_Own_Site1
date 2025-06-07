@@ -5,64 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidorenko</title>
-    <link rel="stylesheet" href="./type.css">
+    <!-- <link rel="stylesheet" href="./type.css"> -->
 </head>
 
-<body>
-    <header class="header">
-        <h1>Мой первый сайт</h1>
-        <p>
-            Меня зовут Миша, я представляю вам свой первый полноценный сайт, немного визитка, немного просто интересной
-            (по моему мнению) информации. Сайт идеально вам подойдёт если вам не терпится узнать кто такой Миша
-            Сидореко, вы только что приехали в Челябинск, думаете что приготовить и где взять студента себе на работу.
-            Надеюсь вам понравиться
-        </p>
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="./interesting_places.html">Интересные места</a></li>
-                <li><a href="./recipe.html">Рецепт</a></li>
-                <li><a href="./resume.html">Резюме</a></li>
-            </ul>
-        </nav>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+    </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+
+<body class="container">
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Сидоренко Михаил</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./interesting_places.html">Интересные места</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recipe.html">Рецепт</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resume.html">Резюме</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <main class="containerMain">
-        <article>
-            <section class="myself">
-                <h3>Чёткое фото</h3>
-                <p>
-                    Мне 19 лет, на первом фото мне где то 14, вставил потому что просто чётко встал. Увлекаюсь
-                    программированием, волейболом, математикой увлекаюсь не по собственному желанию
-                </p>
-                <div class="photoMain">
-                    <img src="./img/photo_2025-03-01_20-40-33.jpg" alt="Моё фото" width="290px">
-                    <img src="./img/main/photo_2025-06-06_20-13-37.jpg" alt="" width="290px">
-                    <img src="./img/main/photo_2025-06-06_20-13-42.jpg" alt="" width="290px">
-                </div>
-            </section>
-        </article>
-        <aside class="aside">
-            <article class="mainRight">
-                <section>
-                    <h3>Школа</h3>
-                    <p>Закончил 152 школу с отличием и 9 ,и 11 класс, вроде как могу учиться. В школе приобрёл хороших
-                        друзей и знакомых и теперь учусь в ВУЗе</p>
+    <main class="container">
+        <div class="row">
+            <article class="left col-4 justify-content: around">
+                <section class="myself pt-3">
+                    <h3>Чёткое фото</h3>
+                    <p>
+                        Мне 19 лет, на первом фото мне где то 14, вставил потому что просто чётко встал. Увлекаюсь
+                        программированием, волейболом, математикой увлекаюсь не по собственному желанию
+                    </p>
                     <div class="photoMain">
-                        <img src="./img/main/kurch.jpg" alt="" width="290px">
-                        <img src="./img/main/photo_2025-06-06_19-30-50.jpg" alt="" width="290px">
-                        <img src="./img/main/me.jpg" alt="" width="290px">
+                        <img src="./img/photo_2025-03-01_20-40-33.jpg" alt="Моё фото" width="290px">
+                        <img src="./img/main/photo_2025-06-06_20-13-37.jpg" alt="" width="290px">
                     </div>
                 </section>
             </article>
-        </aside>
+            <aside class="aside col ms-auto">
+                <article class="mainRight">
+                    <section class="side_elements pt-3">
+                        <h3>Школа</h3>
+                        <p>Закончил 152 школу с отличием и 9 ,и 11 класс, вроде как могу учиться. В школе приобрёл
+                            хороших
+                            друзей и знакомых и теперь учусь в ВУЗе</p>
+                        <div class="photoMain">
+                            <img src="./img/main/kurch.jpg" alt="" width="290px">
+                            <img src="./img/main/photo_2025-06-06_19-30-50.jpg" alt="" width="290px">
+                        </div>
+                    </section>
+                </article>
+            </aside>
+        </div>
     </main>
 
-    <footer>
-        <p>Меня можно найти по ссылкам ниже</p>
-        <a href="https://t.me/Kniggochka" target="_blank">Telegram</a>
-        <a href="https://github.com/mishail3two1" target="_blank">GitHub</a>
-        <a href="https://vk.com/mihalchevonesesh" target="_blank">Вконтакте</a>
+    <footer class="text-center text-white mt-2" style="background-color:rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <section>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://t.me/Kniggochka"
+                    target="_blank"><i class="bi bi-telegram"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/mishail3two1"
+                    target="_blank"><i class="bi bi-github"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://vk.com/mihalchevonesesh"
+                    target="_blank"><i class="bi bi-vimeo"></i></a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025
+        </div>
     </footer>
 
 </body>
