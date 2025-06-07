@@ -1,0 +1,44 @@
+.myself {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mainRight {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.myself {
+    margin-bottom: 10px;
+}
+
+.photoMain {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .containerMain {
+        flex-direction: column;
+    }
+
+    article,
+    aside {
+        width: 100%;
+        margin: 10px0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .photoMain img {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

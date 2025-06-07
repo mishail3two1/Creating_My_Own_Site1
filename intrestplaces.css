@@ -1,0 +1,50 @@
+.revolution {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 186px;
+}
+
+.most {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.zoo {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pushkin {
+    background-color: #8D8741;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+ .container {
+ display: flex;
+ flex-direction: column; 
+ align-items: center; 
+}
+
+ article, aside {
+ width:100%; 
+ margin:10px0; 
+ padding:10px; 
+ box-sizing: border-box; 
+}
+
+ img {
+ width:100%; 
+ height: auto; 
+}
+
+p {
+ font-size:16px; 
+ line-height:1.5; 
+}
+}
